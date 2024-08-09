@@ -105,6 +105,9 @@ body {
     gap: 20px;
     border-radius: 0px 10px 10px 0px;
     color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .usidebar span {
@@ -291,7 +294,6 @@ button:hover {
 }
 
 #about {
-    background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%) !important;
     height: 100vh;
     width: auto;
 }
@@ -320,13 +322,12 @@ button:hover {
 
 .abttext p {
     font-family: 'Poppins', sans-serif;
-    color: #e4e6df;
     margin-top: 35px;
 }
 
 .abtimg {
     padding: 30px;
-    background: #ffffff;
+    background: #e0e0e0;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -335,6 +336,7 @@ button:hover {
 .left {
     display: flex;
 }
+
 
 .dot {
     background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%) !important;
@@ -391,6 +393,7 @@ button:hover {
     padding: 8px 12px;
     border: 1px solid black;
     border-radius: 8px;
+    z-index: 100;
 }
 
 .material-symbols-rounded[title] {
@@ -629,4 +632,129 @@ a:hover {
 .sico[data-title]:hover::after {
     opacity: 1;
     visibility: visible;
+}
+
+#projects {
+    height: 100vh;
+    width: auto;
+}
+
+#sidebar-container {
+    position: fixed;
+    left: -100px;
+    top: 0;
+    height: 100%;
+    transition: left 0.5s ease-in;
+}
+
+#sidebar-container.show {
+    left: 0; 
+}
+
+.procont{
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+hr{
+    background: #ff00002a;
+    border: none;
+    height: 1px;
+    width: 70%;
+}
+.primg{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
+    width: 40vw;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.primg img{
+    width: 35vw;
+}
+
+.primg h2{
+    margin-left: 20px;
+    margin: -3vh 0px 3px 3vh;
+    font-family: 'poppins',sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+
+.overly{
+    width: 100%;
+    height: 100%;
+    background: #00000089;
+    border-radius: 10px;
+    position: absolute;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+    align-items: center;
+    display: none;
+    transition: all 0.3s;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+.primg:hover .overly{
+    display: flex;
+    opacity: 1;
+}
+
+.botn{
+    padding: 16px 24px;
+    border-radius: 10px;
+    background: #000000;
+    
+}
+
+.di{
+    display: flex;
+    gap: 20px;
+}
+
+.botn1{
+    padding: 14px 24px;
+    border-radius: 10px;
+    background: #00000000;
+    border: 2px solid white;
+    
+}
+
+.botn:hover,.botn1:hover{
+    transform: none;
+    transform: scale(1.02);
+    
+}
+
+.pright{
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.primg1{
+    background: #1877F2;
+    width: 30vw;
+    display: flex;
+}
+
+.primg1m img{
+    object-fit: cover;
+    width: 100px;
+}
+
+.primg1m{
+    object-fit: cover;
+    background: green;
+    width: 100px;
+    height: 100px;
 }

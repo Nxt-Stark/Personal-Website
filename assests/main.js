@@ -27,3 +27,18 @@ document.querySelectorAll('.menu a, .usidebar a').forEach(anchor => {
         });
     });
 });
+
+
+window.addEventListener('scroll', function() {
+    const aboutSection = document.querySelector('#about');
+    const sidebar = document.querySelector('#sidebar-container');
+
+    const aboutPosition = aboutSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+
+    if (aboutPosition < screenPosition) {
+        sidebar.classList.add('show');
+    } else {
+        sidebar.classList.remove('show');
+    }
+});

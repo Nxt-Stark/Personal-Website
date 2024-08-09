@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="sidebar-container">
     <span class="usidebar">
         <a href="#nav" style="color: white;"><span class="material-symbols-rounded active1" data-title="Home">
             home
@@ -29,7 +30,7 @@
         <a href="#contact" style="color: white;"><span class="material-symbols-rounded" data-title="Contact">
             chat
         </span></a>
-    </span>
+    </span></div>
     <span class="uprnd"><i class="	fa fa-angle-double-up"></i></span>
     <nav class="nav" id="nav">
         <div class="name">
@@ -74,10 +75,11 @@
             <div class="image"><img src="/assests/images/IMG_20231223_183305.jpg" class="imgg" alt="mainimage"></div>
         </div>
         </section>
+        <hr class="hr">
         <section id="about">
             <div class="adtcont">
                 <div class="abttext">
-                    <h1><span class="who">Who</span> am I?</h1>
+                    <h1><span class="bg">Who</span> <span class="ln">am I?</span></h1>
                 </div>
                 <div class="abtimg">
                     <div class="left">
@@ -103,10 +105,11 @@
                     </div>
                 </div>
                 <div class="abttext">
-                <P style="text-align: justify;line-height: 40px;">Hello, my name is Hadil. I'm from Tanur and I hold a Diploma in Computer Engineering, which I earned after completing a 3-year program. Currently, I am enrolled in a 6-month MERN Stack course in <span class="who">Bridgeon,</span> which also includes an additional month of training with an internship. My goal is to leverage my skills and knowledge to build a successful career as a web developer. I'm particularly interested in web development technologies and have been focusing on designing modern, user-friendly interfaces.  I'm eager to apply my expertise in a professional setting and contribute to innovative <span class="who">web projects.</span></P>
+                <P style="text-align: justify;line-height: 40px;">Hello, my name is Hadil. I'm from Tanur and I hold a Diploma in Computer Engineering, which I earned after completing a 3-year program. Currently, I am enrolled in a 6-month MERN Stack course in <span class="bg">Bridgeon,</span> which also includes an additional month of training with an internship. My goal is to leverage my skills and knowledge to build a successful career as a web developer. I'm particularly interested in web development technologies and have been focusing on designing modern, user-friendly interfaces.  I'm eager to apply my expertise in a professional setting and contribute to innovative <span class="bg">web projects.</span></P>
             </div>
             </div>
         </section>
+        <hr class="hr">
         <section id="skills">
             <div class="skillcont">
                 <div class="skilltxt">
@@ -226,12 +229,66 @@
                             <div class="sico" data-title="Git"><img src="/assests/images/skills/git.png" alt=""></div>
                             <div class="sico" data-title="Adobe Illustrator"><img src="/assests/images/skills/adobe-illustrator.png" alt=""></div>
                             <div class="sico" data-title="MongoDB"><img src="/assests/images/skills/mongo-db.png" alt=""></div>
-                            <div class="sico" data-title="Visual Studio Code"><img src="/assests/images/skills/visual-studio-code.png" alt=""></div>
+                            <div class="sico" data-title="VS Code"><img src="/assests/images/skills/visual-studio-code.png" alt=""></div>
                         </div>
                     </div>                    
                     <div class="tools"></div>                 
                 </div>
             </div>
+        </section>
+        <hr class="hr">
+        <section id="projects">
+            <div class="procont">
+            <div class="prleft">
+                <h1 style="font-size: 10vh;font-family: 'poppins',sans-serif;"><span class="bg">My</span> <span class="ln">Projects</span></h1>
+                <div class="primg">
+                    <div class="overly">
+                        <div class="di">
+                            <a href="https://github.com/Nxt-Stark/Personal-Website"><button type="button" class="botn">Jump to site</button></a>
+                            <a href="https://github.com/Nxt-Stark/Personal-Website"><button type="button" class="botn1">View source</button></a>
+                        </div>
+                    </div>
+                    <img src="/assests/images/CM.png" alt="cm">
+                    <h2>Portfolio website</h2>
+                </div>
+            </div>
+            <div class="pright">
+                <div class="primg1">
+                    <div class="primg1m">
+                        <img src="/assests/images/CM.png" alt="app"></div>
+                    <div class="primg1r">
+                        <h3>AirBnb Clone</h3>
+                        <div class="btns">
+                            <button type="button">Jump to site</button>
+                            <button type="button">View Source</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="primg1">
+                    <div class="primg1m">
+                        <img src="/assests/images/CM.png" alt="app"></div>
+                    <div class="primg1r">
+                        <h3>AirBnb Clone</h3>
+                        <div class="btns">
+                            <button type="button">Jump to site</button>
+                            <button type="button">View Source</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="primg1">
+                    <div class="primg1m">
+                        <img src="/assests/images/CM.png" alt="app">
+                    </div>
+                    <div class="primg1r">
+                        <h3>AirBnb Clone</h3>
+                        <div class="btns">
+                            <button type="button">Jump to site</button>
+                            <button type="button">View Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
     </div>
     <script src="/assests/main.js"></script>
