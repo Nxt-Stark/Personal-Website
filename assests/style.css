@@ -1,10 +1,10 @@
-
 html {
     scroll-behavior: smooth;
 }
+ 
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "poppins", sans-serif;
     margin: 0%;
     position: relative;
     cursor: url('/assests/images/pngeg.png'), auto;
@@ -33,7 +33,7 @@ body {
 
 .name h1 {
     margin: 0%;
-    font-size: 30px;
+    font-size: max(2vw, 25px);
 }
 
 .blue {
@@ -117,7 +117,7 @@ body {
 .usidebar span:hover, .usidebar .active1 {
     transform: scale(1.3);
     cursor: url('/assests/images/cursor-pointer.png'), pointer;
-    color: #000000;
+    color: #000000 !important;
 }
 
 .uprnd {
@@ -142,15 +142,14 @@ body {
 
 #home {
     display: flex;
-    justify-content: space-between;
-    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
     font-family: "Poppins", sans-serif !important;
-    height: 80vh;
+    height: 100vh;
 }
 
 .welcome {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +162,7 @@ body {
 }
 
 .icon, .black {
-    font-size: 32px;
+    font-size: max(2vw, 25px);
     display: flex;
     align-items: center;
     color: #000000;
@@ -209,9 +208,14 @@ body {
 }
 
 .welcome .head {
-    font-size: 50px;
+    font-size: max(3vw, 50px);
+    font-size: 3vw;
     display: flex;
     flex-direction: column;
+}
+
+.head h1{
+    font-size: max(5vw, 50px);
 }
 
 .headimg {
@@ -220,8 +224,9 @@ body {
 }
 
 .welcome .head img {
-    width: 100px;
+    width: 30vw;
     height: 100px;
+    display: none;
 }
 
 .welcome .head h1 {
@@ -235,13 +240,14 @@ body {
 }
 
 .image {
-    background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
-    height: 450px;
+    height: 30vw;
+    min-height: 300px;
     border-radius: 20px;
 }
 
 .image .imgg {
-    height: 450px;
+    height: 30vw;
+    min-height: 300px;
     filter: saturate(100%);
     transition: all 0.3s;
     border-radius: 20px;
@@ -295,24 +301,28 @@ button:hover {
 
 #about {
     height: 100vh;
+    display: flex;
+    justify-content: center;
     width: auto;
 }
 
 #skills {
     height: 100vh;
+    display: flex;
+    justify-content: center;
     width: auto;
 }
 
 .adtcont,.skillcont {
-    padding: 0px 100px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
 
-.abttext h1, .skilltxt h1 {
-    font-size: 10vh;
+.abttext h1, .skilltxt h1, .rowin h1{
+    font-size: 5vw;
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: bolder;
@@ -331,6 +341,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -597,10 +608,9 @@ a:hover {
 }
 
 .skillsico{
-    display: grid;
-    grid-gap: 6vh;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -634,11 +644,6 @@ a:hover {
     visibility: visible;
 }
 
-#projects {
-    height: 100vh;
-    width: auto;
-}
-
 #sidebar-container {
     position: fixed;
     left: -100px;
@@ -651,10 +656,16 @@ a:hover {
     left: 0; 
 }
 
+#projects {
+    height: 100vh;
+    width: 100%;
+}
+
 .procont{
     padding: 0px 100px 0px 100px;
     display: flex;
-    justify-content: center;
+    height: 100%;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -735,26 +746,146 @@ hr{
 }
 
 .pright{
-    background: #000000;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .primg1{
-    background: #1877F2;
+    background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
     width: 30vw;
     display: flex;
+    border-radius: 10px 10px 10px 10px;
+    transition: all 0.3s;
+}
+
+.primg1:hover{
+    cursor: url('/assests/images/cursor-pointer.png'), pointer;
 }
 
 .primg1m img{
-    object-fit: cover;
-    width: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: all 0.3s;
 }
 
 .primg1m{
-    object-fit: cover;
-    background: green;
-    width: 100px;
-    height: 100px;
+    background: white;
+    position: relative;
+    object-fit:contain;
+    width: 35%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.bd{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000037;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prleft h1{
+    margin: 0%;
+}
+
+.prleft{
+    height: 80vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.primg1r{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+
+.primg1r h3{
+    color: white;
+    font-weight: bolder;
+    font-family: 'poppins',sans-serif;
+    margin: 2vh 0vh 2vh 0vh;
+}
+
+#contact{
+    height: 100vh;
+}
+
+.container{
+    padding: 0px 100px;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.frms{
+    background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #9b9b9b;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #9b9b9b;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9b9b9b;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.menubar{
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .item {
+        display: none;
+    }
+    .menubar{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+.welcome {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+}
 }

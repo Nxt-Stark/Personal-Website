@@ -42,3 +42,20 @@ window.addEventListener('scroll', function() {
         sidebar.classList.remove('show');
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("#sidebar-container a");
+
+    function handleScroll() {
+        let index = sections.length;
+
+        while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        navLinks.forEach((link) => link.classList.remove("active1"));
+        navLinks[index].classList.add("active1");
+    }
+
+    window.addEventListener("scroll", handleScroll);
+});
