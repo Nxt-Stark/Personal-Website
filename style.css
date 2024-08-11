@@ -7,7 +7,7 @@ body {
     font-family: "poppins", sans-serif;
     margin: 0%;
     position: relative;
-    cursor: url('pngeg.png'), auto;
+    cursor: url('/assets/images/pngeg.png'), auto;
 }
 
 .nav {
@@ -60,7 +60,7 @@ body {
 }
 
 .item:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     transform: translateY(-5px);
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .connect:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     transform: translate(4px);
 }
 
@@ -116,7 +116,7 @@ body {
 
 .usidebar span:hover, .usidebar .active1 {
     transform: scale(1.3);
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     color: #000000 !important;
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .uprnd:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     transform: translateY(-5px);
 }
 
@@ -170,27 +170,27 @@ body {
 }
 
 .black:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     transform: translateY(-5px);
 }
 
 .fa-instagram:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     color: #cf65d5;
 }
 
 .fa-linkedin-square:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     color: #0077B5 !important;
 }
 
 .fa-facebook-square:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     color: #1877F2 !important;
 }
 
 .bi-github:hover {
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
     color: gray;
 }
 
@@ -261,7 +261,7 @@ body {
 
 .image .imgg:hover {
     filter: saturate(0);
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
 }
 
 .buttons {
@@ -281,7 +281,7 @@ button {
 
 button:hover {
     transform: translateX(5px);
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
 }
 
 .bt2 {
@@ -296,7 +296,7 @@ button:hover {
 
 .bt2:hover {
     transform: translateY(-5px);
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
 }
 
 #about {
@@ -366,7 +366,7 @@ button:hover {
 
 .color:hover .dot {
     display: block;
-    cursor: url('cursor-pointer.png'),
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'),
 
  pointer;
 }
@@ -412,7 +412,7 @@ button:hover {
 }
 
 a:hover {
-    cursor: url('cursor-pointer.png'), pointer !important;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer !important;
 }
 
 .skills{
@@ -451,7 +451,7 @@ a:hover {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    background: #e0e0e0; /* Light background color for the unfilled part */
+    background: #e0e0e0; 
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -471,7 +471,7 @@ a:hover {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    background: #e0e0e0; /* Light background color for the unfilled part */
+    background: #e0e0e0;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -491,7 +491,7 @@ a:hover {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    background: #e0e0e0; /* Light background color for the unfilled part */
+    background: #e0e0e0; 
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -511,7 +511,7 @@ a:hover {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    background: #e0e0e0; /* Light background color for the unfilled part */
+    background: #e0e0e0; 
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -531,7 +531,7 @@ a:hover {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    background: #e0e0e0; /* Light background color for the unfilled part */
+    background: #e0e0e0;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -551,7 +551,7 @@ a:hover {
     width: 100%;
     height: 10px;
     border-radius: 50px;
-    background: #e0e0e0; /* Light background color for the unfilled part */
+    background: #e0e0e0; 
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -633,7 +633,7 @@ a:hover {
     z-index: 10;
     top: 100px;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%); 
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
@@ -761,7 +761,7 @@ hr{
 }
 
 .primg1:hover{
-    cursor: url('cursor-pointer.png'), pointer;
+    cursor: url('/Personal-Website/assets/images/cursor-pointer.png'), pointer;
 }
 
 .primg1m img{
