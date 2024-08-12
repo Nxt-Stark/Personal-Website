@@ -122,7 +122,7 @@ body {
 
 .uprnd {
     background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
-    padding: 10px 14px;
+    padding: 8px 14px;
     border-radius: 100px;
     position: fixed;
     bottom: 30px;
@@ -247,7 +247,7 @@ body {
 
 .image .imgg {
     height: 30vw;
-    min-height: 300px;
+    min-height: 400px;
     filter: saturate(100%);
     transition: all 0.3s;
     border-radius: 20px;
@@ -746,18 +746,20 @@ hr{
 }
 
 .pright{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .primg1{
     background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
     width: 30vw;
     display: flex;
+    flex-direction: column;
     border-radius: 10px 10px 10px 10px;
     transition: all 0.3s;
+    box-shadow: 0px 0px 6px #00000061;
 }
 
 .primg1:hover{
@@ -769,15 +771,14 @@ hr{
     height: 100%;
     object-fit:contain;
     transition: all 0.3s;
+    border-radius: 10px;
 }
 
 .primg1m{
     background: white;
     position: relative;
     object-fit:contain;
-    width: 35%;
-    height: 100%;
-    border-radius: 10px 0px 0px 10px;
+    width: 100%;
 }
 
 .bd{
@@ -805,10 +806,13 @@ hr{
 
 .primg1r{
     display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    justify-content: center;
-    padding-bottom: 2vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #AF65D5 0%, #ff5d35 100%);
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0px;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
 }
 
 .primg1r h3{
@@ -881,11 +885,48 @@ textarea{
 .welcome {
     width: 100%;
     padding-left: 20px;
+    display: flex;
+    justify-content: center;
     padding-right: 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: -40px;
 }
 
 #home {
+    margin-top: -50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
 }
+
+.uprnd {
+    bottom: 10px;
+    right: 20px;
+}
+
+.usidebar {
+    width: 3vw;
+    padding: 12px;
+    gap: 10px;
+}
+
+.head{
+    text-align: center;
+}
+
+.pright{
+    display: none;
+}
+.material-symbols-rounded{
+    width: 5px;
+}
+
+.welcome .pg {
+    margin-bottom: 10px;
+}
+
 }
